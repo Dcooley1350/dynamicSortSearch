@@ -1,0 +1,3 @@
+/home/jrwebdevin/Documents/cs162/week4/wk4LabBDCooley/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jrwebdevin/Documents/cs162/week4/wk4LabBDCooley/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jrwebdevin/Documents/cs162/week4/wk4LabBDCooley/cmake-build-debug/CMakeFiles/wk4LabBDCooley.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/wk4LabBDCooley.dir/main.cpp.o CMakeFiles/wk4LabBDCooley.dir/dynArraySortSearch.cpp.o  -o wk4LabBDCooley 
