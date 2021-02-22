@@ -5,7 +5,7 @@
 const int MIN_NUMBER_SIZE = -50, MAX_NUMBER_SIZE = 50;
 
 int getInt(int, int);
-int* createArray(int);
+const int * createArray(int);
 void displayArray(const int *, int);
 bool binSearch(const int *, int, int);
 bool stillSearching();

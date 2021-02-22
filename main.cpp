@@ -5,7 +5,7 @@
 using std::cout, std::endl;
 
 int main() {
-    int arraySize, *numArray, userInt;
+    int arraySize, userInt;
     const int MIN_ARRAY_SIZE = 10, MAX_ARRAY_SIZE = 20;
 
     // Seed random number generator
@@ -16,7 +16,7 @@ int main() {
     arraySize = getInt(MIN_ARRAY_SIZE, MAX_ARRAY_SIZE);
 
     // Create and fill array with size given by user
-    numArray = createArray(arraySize);
+    const int * numArray = createArray(arraySize);
 
     // Start loop to allow the user to search for as many numbers as they like
     do {

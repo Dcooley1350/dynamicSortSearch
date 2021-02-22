@@ -5,7 +5,9 @@
 
 #include "dynArraySortSearch.hpp"
 
-using std::cin, std::cout, std::endl;
+using std::cin;
+using std::cout;
+using std::endl;
 
 void resetStream();
 bool validateCharacterInput(char, const char [], int);
@@ -32,7 +34,7 @@ int getInt(int min, int max)
     return validatedInput;
 }
 
-int *createArray(int arraySize)
+const int * createArray(int arraySize)
 {
     //Create array of given size full of zeroes
     auto *numArray = new int[arraySize] {0};
@@ -52,7 +54,7 @@ int *createArray(int arraySize)
     return numArray;
 }
 
-void displayArray(const int *array, int arraySize)
+void displayArray(const int * array, int arraySize)
 {
     const int STREAM_WIDTH = 4, LINE_ITEMS = 5;
     for (int i = 0; i < arraySize; ++i) {
@@ -68,7 +70,7 @@ void displayArray(const int *array, int arraySize)
     cout << endl;
 }
 
-bool binSearch(const int *numArray, int size, int value)
+bool binSearch(const int * numArray, int size, int value)
 {
     int min = 0;
     int max = size - 1;
@@ -101,7 +103,7 @@ bool stillSearching()
         // Uppercase the input to allow lower and uppercase entries
         userInput = static_cast<char>(toupper(userInput));
         // Validate input 
-        if(validateCharacterInput(userInput, ACCEPTABLE_INPUT, 2)){
+        if(!cin.fail() && validateCharacterInput(userInput, ACCEPTABLE_INPUT, 2)){
             validInput = true;
         }
         else {
